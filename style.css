@@ -1,0 +1,46 @@
+body {
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 100vh;
+    position: relative;
+}
+
+h2 {
+    width: 100%;
+    font-family: 'koulen', sans-serif;
+    text-align: center;
+}
+
+.box { 
+    background: lightgrey;
+
+    width: 30vw;
+    height: auto;
+    min-height: 25rem;
+    padding: 1rem;
+    margin: 0;
+    border: black solid .3rem;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box {
+        width: 90vw;
+        border-width: .6rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    
+}
+
+
+
